@@ -1,3 +1,5 @@
+
+import 'package:first_app/week3.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,65 +24,12 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blueGrey,
       ),
       debugShowCheckedModeBanner: false,
-      home: MyWidget()
+      home: week3()
     );
   }
 }
 
 //widget ที่เราสร้างเอง
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Stack(
-          children: [
-            Container(
-              //color: Colors.red,
-              height: 300, 
-              width: 120,
-              decoration: 
-                BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(20) )
-            ),
-            Positioned(
-              top:20,
-              left: 20,
-              child: Container(
-                height: 80, 
-                width: 80,
-                decoration: 
-                  BoxDecoration(shape: BoxShape.circle, color: Colors.red)),
-            ),
-
-            Positioned(
-              top:110,
-              left: 20,
-              child: Container(
-                height: 80, 
-                width: 80,
-                decoration: 
-                  BoxDecoration(shape: BoxShape.circle, color: Colors.yellow)),
-
-            ),
-             Positioned(
-              top:200,
-              left: 20,
-              child: Container(
-                height: 80, 
-                width: 80,
-                decoration: 
-                BoxDecoration(shape: BoxShape.circle, color: Colors.green)),
-            )],
-          )
-        ),
-        
-      );
-        
-        
-  }
-}
