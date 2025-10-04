@@ -39,7 +39,6 @@ class _Week4State extends State<Week4> {
     }
   }
 
-  /// ฟังก์ชันแปลงค่า AQI → สถานะ + สี
   Map<String, dynamic> getAqiStatus(int aqi) {
     String status;
     Color color;
